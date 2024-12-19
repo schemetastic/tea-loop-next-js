@@ -2,6 +2,8 @@
 
 This is a demo site app using [Next.js](https://nextjs.org/) and [DevCycle](https://www.devcycle.com/)
 
+Preview the project here: [https://tea-loop-next-js.vercel.app/](https://tea-loop-next-js.vercel.app/)
+
 ## Setting up Tea Loop
 
 1. After cloning this repository in your machine, rename the file `.sample.env` to `.env` and then add your respective DevCycle Keys.
