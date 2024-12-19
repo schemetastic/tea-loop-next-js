@@ -1,4 +1,4 @@
-The main project and most of its files are licensed as follow:
+The main project (this repo) and most of its files are licensed as follow:
 
 The MIT License (MIT)
 
