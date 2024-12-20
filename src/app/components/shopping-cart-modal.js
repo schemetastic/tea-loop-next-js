@@ -31,6 +31,10 @@ export function ShoppingCartModal(props) {
         <div style={{ visibility: showShoppingCart }} id="shopping-cart-modal" onClick={handleModalClick} className={styles.shoppingCart_modalContainer}>
             <div className={styles.shoppingCart_modalBox}>
                 <button className={styles.shoppingCart_modalBox_closeBtn} id="shopping-cart-close-btn" ><IconX className={styles.shoppingCart_modalBox_iconX} /></button>
+                <div className={styles.shoppingCart_modalBox_titleContainer}>
+                    <div className={styles.shoppingCart_modalBox_titleIcon}><IconShoppingCart size="2rem" /></div>
+                    <h2 className={styles.shoppingCart_modalBox_title}>Your Cart</h2>
+                </div>
                 <div className={styles.shoppingCart_modalBox_itemsContainer} style={{ justifyContent: itemsInCartArr.length > 1 ? "start" : "center" }}>
                     {itemsInCartArr.length > 1 ?
                         shoppingCartItems :

@@ -123,7 +123,7 @@
   max-width: 860px;
   text-align: center;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   font-size: var(--large-title);
 }
 
@@ -496,17 +496,17 @@
 }
 
 .shoppingCart_button_counter {
-  font-size: 14px;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0.52rem;
-  right: 0.23rem;
+  right: 0.2rem;
   background-color: var(--product-button-color);
   color: white;
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   z-index: 1;
 }
@@ -555,11 +555,37 @@
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+  z-index: 1;
 }
 
 .shoppingCart_modalBox_closeBtn:hover,
 .shoppingCart_modalBox_closeBtn:focus {
   background-color: #dedede;
+}
+
+.shoppingCart_modalBox_titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5rem 1rem 2rem 1rem;
+}
+
+.shoppingCart_modalBox_titleIcon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--product-button-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingCart_modalBox_title {
+  font-size: var(--medium-large-title);
+  font-weight: 400;
+  margin: 0;
 }
 
 .shoppingCart_modalBox_itemsContainer {
@@ -712,7 +738,7 @@
 @media (prefers-reduced-motion) {}
 
 /* Mobile */
-@media (max-width: 700px) {}
+
 
 @media (min-width: 1921px) {
   .main {
@@ -723,5 +749,73 @@
   .appFooter_container {
     border-left: 2px solid #cecece;
     border-right: 2px solid #cecece;
+  }
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 780px) {
+  .homeHeader_teaCupContainer {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .homeHeader_teaBoxContainer {
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .productItem_container {
+    flex-basis: calc(50% - 0.67rem);
+  }
+
+  .productHeader {
+    flex-direction: column-reverse;
+  }
+
+  .productHeader_image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 580px) {
+  .shoppingCart_itemContainer {
+    flex-direction: column;
+  }
+
+  .shoppingCart_itemSeparator {
+    height: 2px;
+    width: 90%;
+    flex-basis: 2px;
+  }
+}
+
+@media (max-width: 420px) {
+  .homeHeader_teaCupContainer {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .homeHeader_teaBoxContainer {
+    width: 19rem;
+    height: 14rem;
+  }
+
+  .productItem_container {
+    flex-basis: 100%;
+  }
+
+  .productItem_image {
+    width: 70%;
+    height: auto;
+  }
+
+  .productHeader_image {
+    width: 90%;
+  }
+
+  .shoppingCart_itemRemoveBtn {
+    width: 2.4rem;
+    height: 2.4rem;
   }
 }

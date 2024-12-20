@@ -19,8 +19,8 @@ export function HomeHeader(props) {
 
     async function handleRedirect(ev) {
         ev.preventDefault();
-        trackEvent({ type: "clicked-header-cta" });
-        setTimeout(() => { window.location = "/product/" + variant }, 2000);
+        trackEvent({ type: "header-flavor-cta" });
+        setTimeout(() => { window.location = "/product/" + variant }, 700);
     }
     return (
         <header className={styles.homeHeader} style={{ backgroundColor: bgColor }}>

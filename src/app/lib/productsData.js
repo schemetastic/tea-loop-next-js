@@ -13,7 +13,7 @@ const products = {
     },
     "raspberry-mint": {
         title: "Raspberry Mint",
-        slogan: "Soothing and great to start each day",
+        slogan: "Refreshing with a strong aroma",
         productType: "box",
         price: "$12.00",
         imgFile: "raspberry-mint-box.webp",
@@ -25,7 +25,7 @@ const products = {
     },
     "peach": {
         title: "Peach",
-        slogan: "Soothing and great to start each day",
+        slogan: "For golden afternoons",
         productType: "box",
         price: "$12.00",
         imgFile: "peach-box.webp",
@@ -37,7 +37,7 @@ const products = {
     },
     "rose-lavender": {
         title: "Rose & Lavender",
-        slogan: "Soothing and great to start each day",
+        slogan: "Fills the room with a nostalgic essence",
         productType: "box",
         price: "$12.00",
         imgFile: "rose-lavender-box.webp",
@@ -49,7 +49,7 @@ const products = {
     },
     "pomegranate": {
         title: "Pomegranate",
-        slogan: "Soothing and great to start each day",
+        slogan: "A bit tangy and great with meals",
         productType: "box",
         price: "$12.00",
         imgFile: "pomegranate-box.webp",
@@ -61,7 +61,7 @@ const products = {
     },
     "black-tea-lemon": {
         title: "Black Tea & Lemon",
-        slogan: "Soothing and great to start each day",
+        slogan: "Hot & cold, you can't fail with it",
         productType: "box",
         price: "$12.00",
         imgFile: "black-tea-lemon-box.webp",
@@ -73,7 +73,7 @@ const products = {
     },
     "tea-infuser-jar": {
         title: "Tea Infuser Jar",
-        slogan: "Soothing and great to start each day",
+        slogan: "Infuses tea enough for 4 cups!",
         productType: "other",
         price: "$27.00",
         imgFile: "tea-infuser-jar.webp",
@@ -85,7 +85,7 @@ const products = {
     },
     "tea-infuser-balls": {
         title: "Tea Infuser Balls",
-        slogan: "Soothing and great to start each day",
+        slogan: "Great for traveling!",
         productType: "other",
         price: "$9.00",
         imgFile: "tea-infuser-ball.webp",
@@ -109,7 +109,7 @@ const products = {
     },
     "raspberry-mint-loose-leaf": {
         title: "Raspberry Mint Loose Leaf",
-        slogan: "Soothing and great to start each day",
+        slogan: "Refreshing with a strong aroma",
         productType: "loose-leaf",
         price: "$25.00",
         imgFile: "raspberry-mint-can.webp",
