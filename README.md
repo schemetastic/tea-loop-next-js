@@ -13,7 +13,7 @@ Preview the project here: [https://tea-loop-next-js.vercel.app/](https://tea-loo
 npm install
 ```
 
-3. Go to DevCycle and create an Experiment feature that returns a string value, the key string to the feature should be `tea-header-variant`, the feature variants should look like this:
+3. Go to DevCycle and create an Experiment feature that returns a string value, the key string to the feature should be `tea-loop-header-flavor`, the feature variants should look like this:
 
 |  #  |    Variable     |       key       |
 | :-: | :-------------: | :-------------: |
@@ -45,7 +45,7 @@ Black Tea Lemon | 16.65%
 -   Schedule: none
 -   Randomize Using: User ID
 
-5. Go to the "Experiment Results" section and then create a new Metric, for the event name, make sure that they key is named `clicked-header-cta`, the Type of the metric should be "Total Sum", and optimized for "Increase"
+5. Go to the "Experiment Results" section and then create a new Metric, make sure that the key of the metric be `preferred-header-flavor`, and that the event key be named `header-flavor-cta-clicked`, the Type of the metric should be "Total Sum", and optimized for "Increase"
 
 6. Now that you are all set-up, go to the root directory of the project and hit:
 

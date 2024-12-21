@@ -7,7 +7,6 @@ export function Footer() {
                 <span>© Rodrigo Calix 2024</span>
                 <div className={styles.appFooter_linksContainer}>
                     <a href="/privacy-policy/" className={styles.appFooter_link}>Privacy Policy</a>
-                    <a href="/disclaimer/" className={styles.appFooter_link}>Disclaimer</a>
                 </div>
             </div>
         </footer>

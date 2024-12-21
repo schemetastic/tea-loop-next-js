@@ -7,6 +7,7 @@ import { Nav } from "./nav";
 import { useState } from "react";
 import * as React from 'react'
 import { useTrack } from '@devcycle/nextjs-sdk';
+import { useRouter } from 'next/navigation';
 
 export function HomeHeader(props) {
     const variant = props.variant;
@@ -15,12 +16,12 @@ export function HomeHeader(props) {
     const [cupLoaded, setCupLoaded] = useState(false);
     const [leftDecorLoaded, setLeftDecorLoaded] = useState(false);
     const [rightDecorLoaded, setRightDecorLoaded] = useState(false);
-
+    const router = useRouter();
 
     async function handleRedirect(ev) {
         ev.preventDefault();
-        trackEvent({ type: "header-flavor-cta" });
-        setTimeout(() => { window.location = "/product/" + variant }, 700);
+        trackEvent({ type: "header-flavor-cta-clicked", value: 1 });
+        router.push("/product/" + variant);
     }
     return (
         <header className={styles.homeHeader} style={{ backgroundColor: bgColor }}>
