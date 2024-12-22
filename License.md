@@ -24,6 +24,10 @@ SOFTWARE.
 
 ---
 
+Some images in the project repository where generated with the help of AI (artificial Intelligence) partially or totally. Depending on the jurisdiction, because these images are not made by humans, laws may not recognize an author or proprietary, in any situation, these images are offered under the terms of the MIT license as described above to the maximum extent allowed by applicable law.
+
+---
+
 The project also could include files or content from Next.js, licensed as follows:
 
 The MIT License (MIT)
