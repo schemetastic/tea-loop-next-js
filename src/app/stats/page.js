@@ -40,31 +40,6 @@ export default async function Stats() {
 }
 
 
-function generateData(results) {
-  let data = {};
-  let labels = [];
-  let values = [];
-  let bgColors = []
-
-  results.forEach((item) => {
-    labels.push(item.name);
-    values.push(item.totalValue)
-    bgColors.push(products[item.key].bgColor)
-  });
-
-  let dataset = [{
-    label: "Clicked times record",
-    data: values,
-    backgroundColor: bgColors,
-    hoverOffset: 4
-  }];
-  data.labels = labels;
-  data.datasets = dataset;
-
-  return data;
-}
-
-
 // Get token
 
 async function getToken() {
@@ -81,7 +56,7 @@ async function getToken() {
     })
   }).then(response => response.json())
     .then(data => data.access_token)
-    .catch(error => "error");
+    .catch(error => {console.log(error); return "error"});
 
   return token
 }
@@ -116,7 +91,7 @@ async function getResults(token) {
     .then(data => {
       return data.result.variations
     })
-    .catch(error => "error");
+    .catch(error => {console.log(error); return "error"});
 
   return results;
 }
