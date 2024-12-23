@@ -12,7 +12,10 @@ export function Stats(props){
     useEffect(()=>{
         fetch("/api/get-stats", {
             method: 'GET',
-            headers: { 'Content-Type': 'application/json' }}).then(response => {
+            headers: { 'Content-Type': 'application/json' },
+            cache: "no-store",
+            next: { revalidate: 5 },
+        }).then(response => {
             if (response.status == 500) {
               throw Error("There was a problem trying to fetch the results");
             }
