@@ -18,6 +18,8 @@ async function getToken() {
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"
     },
+    cache: "no-store",
+    next: { revalidate: 60 },
     body: new URLSearchParams({
       grant_type: "client_credentials",
       audience: "https://api.devcycle.com/",
@@ -50,7 +52,9 @@ async function getResults(token) {
     headers: {
       'Authorization': `Bearer ${token}`,
       'Content-Type': 'application/json'
-    }
+    },
+    cache: "no-store",
+    next: { revalidate: 60 }
   })
     .then(response => {
       if (!response.ok) {
