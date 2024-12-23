@@ -47,7 +47,7 @@ export function Stats(props){
         statsStatus == "ok"  ?
         <>
             <h1>Results for the header variants</h1>
-            <p>Below you can find how many times each variant of the header has recorded a click on th CTA button:</p>
+            <p>Below you can find how many times each variant of the header has recorded a click on the CTA button:</p>
             <div className={styles.resultsItemsContainer}>
                 {resultsItems}
             </div>
