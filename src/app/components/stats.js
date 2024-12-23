@@ -18,7 +18,6 @@ export function Stats(props){
             }
             return response.json();
           }).then((results)=>{
-            console.log(results);
             setResultsItems(results.map((item, index) => {
                 return (
                   <div className={styles.resultsItem} key={index}>
